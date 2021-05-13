@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "trello://\\1trello.com/\\2/"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://(www\\.)?trello\\.com/(b|c)/",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]

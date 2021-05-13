@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Trello Link Opener",
+  "version": "1.0",
+  "description": "Open Trello board and card links in the Trello desktop app",
+  "permissions": ["declarativeNetRequest", "declarativeNetRequestFeedback"],
+  "host_permissions": ["*://*.trello.com/*"],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "redirect.json"
+    }]
+  }
+}
